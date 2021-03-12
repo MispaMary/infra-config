@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Ensure backend infrastructure exists
+          name: Ensure backend infrastructure exist
           command: aws cloudformation deploy --template-file template.yml --stack-name my-stack
 
 workflows:
